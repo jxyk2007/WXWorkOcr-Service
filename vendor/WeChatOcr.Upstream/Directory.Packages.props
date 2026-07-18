@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Google.Protobuf" Version="3.29.3" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="NHotkey" Version="3.0.0" />
+    <PackageVersion Include="NHotkey.Wpf" Version="3.0.0" />
+    <PackageVersion Include="ScreenGrab" Version="1.0.6" />
+    <PackageVersion Include="WPF-UI" Version="3.0.5" />
+    <PackageVersion Include="WPF-UI.Tray" Version="3.0.5" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+</Project>

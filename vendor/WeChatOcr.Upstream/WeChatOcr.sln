@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChatOcr.Sample", "sample\WeChatOcr.Sample\WeChatOcr.Sample.csproj", "{1E9D0136-91AC-47D8-9958-127644901557}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{D90142C1-E7ED-4DBF-816E-8734FFE9FA42}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8E59FB73-958A-4C05-A636-AF8EAB71247C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{DD584B43-AF4F-48A9-9A71-779F9C962E79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChatOcr", "src\WeChatOcr\WeChatOcr.csproj", "{7D9B35BF-4204-4108-A217-F6E7B2A3C73A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeChatOcr.Tests", "tests\WeChatOcr.Tests\WeChatOcr.Tests.csproj", "{BFA768A2-05DC-4BCC-A9AF-AED330F3A885}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E9D0136-91AC-47D8-9958-127644901557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9D0136-91AC-47D8-9958-127644901557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9D0136-91AC-47D8-9958-127644901557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9D0136-91AC-47D8-9958-127644901557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D9B35BF-4204-4108-A217-F6E7B2A3C73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9B35BF-4204-4108-A217-F6E7B2A3C73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9B35BF-4204-4108-A217-F6E7B2A3C73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9B35BF-4204-4108-A217-F6E7B2A3C73A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA768A2-05DC-4BCC-A9AF-AED330F3A885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA768A2-05DC-4BCC-A9AF-AED330F3A885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA768A2-05DC-4BCC-A9AF-AED330F3A885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA768A2-05DC-4BCC-A9AF-AED330F3A885}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E9D0136-91AC-47D8-9958-127644901557} = {DD584B43-AF4F-48A9-9A71-779F9C962E79}
+		{7D9B35BF-4204-4108-A217-F6E7B2A3C73A} = {8E59FB73-958A-4C05-A636-AF8EAB71247C}
+		{BFA768A2-05DC-4BCC-A9AF-AED330F3A885} = {8E59FB73-958A-4C05-A636-AF8EAB71247C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35DA8987-9381-466A-84EF-BED0D5627B5D}
+	EndGlobalSection
+EndGlobal

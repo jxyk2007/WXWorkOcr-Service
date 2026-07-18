@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 版本号：v1.1 -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\vendor\WeChatOcr.Upstream\src\WeChatOcr\WeChatOcr.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

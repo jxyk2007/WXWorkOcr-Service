@@ -1,0 +1,15 @@
+riderModule.iml
+/_ReSharper.Caches/
+
+.vs/
+bin/
+obj/
+*.user
+.idea/
+
+packages/
+
+.DS_Store
+
+publish/
+artifacts/

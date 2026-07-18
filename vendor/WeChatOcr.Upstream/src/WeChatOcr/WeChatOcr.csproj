@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- 版本号：v1.2 -->
+        <TargetFrameworks>net8.0-windows;net481;net472</TargetFrameworks>
+    </PropertyGroup>
+    
+    <PropertyGroup Label="Nuget">
+        <Version>1.0.5</Version>
+        <Title>WeChatOcr</Title>
+        <Description>WeChatOcr, Study only, do not use for commercial purposes</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>WeChatOcr</PackageTags>
+    </PropertyGroup>
+    
+    <ItemGroup Label="Nuget">
+        <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Protobuf" />
+      <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <InternalsVisibleTo Include="WeChatOcr.Tests" />
+    </ItemGroup>
+
+</Project>

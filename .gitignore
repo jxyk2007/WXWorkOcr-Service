@@ -1,0 +1,9 @@
+# 版本号：v1.3
+bin/
+obj/
+.vs/
+TestResults/
+*.user
+src/WeChatOcr.Api/appsettings.Local.json
+.vendor-git-backup/
+vendor/WeChatOcr.Upstream/src/WeChatOcr/wco_data/
