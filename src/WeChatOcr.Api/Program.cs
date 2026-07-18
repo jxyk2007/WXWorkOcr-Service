@@ -1,4 +1,4 @@
-// 版本号：v1.2
+// 版本号：v1.3
 using System.Text.Json;
 using Microsoft.Extensions.Options;
 using WeChatOcr.Api.Configuration;
@@ -8,8 +8,9 @@ using WeChatOcr.Core.Diagnostics;
 using WeChatOcr.Core.Ocr;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
+var configurationDirectory = AppContext.BaseDirectory;
+builder.Configuration.AddJsonFile(Path.Combine(configurationDirectory, "appsettings.json"), optional: false, reloadOnChange: true);
+builder.Configuration.AddJsonFile(Path.Combine(configurationDirectory, "appsettings.Local.json"), optional: true, reloadOnChange: true);
 builder.Services.Configure<OcrOptions>(builder.Configuration.GetSection(OcrOptions.SectionName));
 builder.Services.AddSingleton<IWeChatEnvironmentSource, WindowsWeChatEnvironmentSource>();
 builder.Services.AddSingleton<IWeChatEnvironmentProbe, WeChatEnvironmentProbe>();
